@@ -1,3 +1,19 @@
+# About:
+
+This repository provides the code and resources for building an airport flight status widget. The widget is developed using React for the frontend and utilizes a mini backend created with Node.js to communicate with a Datastax Astra DB database.
+
+The frontend, developed with React, will handle user interactions and display the requested data.
+
+The backend, implemented with Node.js, communicates with the Datastax Astra DB database to retrieve the flight information based on user queries and sends the relevant data back to the frontend for rendering.
+
+# Additions:
+
+Added randomization display that occurs every 5 seconds when the page refreshes.
+
+# Contributing
+
+This project may not actively accept contributions or updates. However, if you encounter any issues or believe you can enhance the project, you are welcome to fork the repository and make modifications as per your requirements. If you believe your changes would benefit others, feel free to submit a pull request. Please note that the original author may not actively review or merge incoming pull requests.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
