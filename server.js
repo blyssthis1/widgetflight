@@ -14,10 +14,25 @@ const app = express()
 
 app.use(cors())
 
+//testing homepage
+// app.get('/', (req, res) => {
+//     res.send("hi")
+// })
 
-app.get('/flights', (req, res) => {
+// const min = Math.ceil(min);
+// const max = Math.floor(max);
+
+
+
+
+
+app.get('/', (req, res) => {
+    //Created a variable that shows random amount of flight statuses between 1-6 everytime the 
+    //frontend useEffect is pinged(which is every 5 seconds) Changed pageSize=6 to new template literal (pageSize) which just means random 1-6.
+    let pageSize = Math.floor(Math.random() * 6) + 1
+    console.log("Check it out ", pageSize)
     const options = {
-        url: `${process.env.URL}?page-size=6`,  
+        url: `${process.env.URL}?page-size=${pageSize}`,  
         headers: {
             accept: 'application/json',
             'X-Cassandra-Token': process.env.TOKEN
